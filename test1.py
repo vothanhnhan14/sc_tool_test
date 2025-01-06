@@ -1,6 +1,6 @@
 from llama_cpp import Llama
 
-# Load a model
+# Load a model from file path
 model = Llama(model_path="path/to/model.gguf")
 
 # User-supplied input (potentially malicious)
