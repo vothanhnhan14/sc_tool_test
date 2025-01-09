@@ -1,5 +1,11 @@
 from django.http import HttpResponse
-#from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def file_upload_view(request):
-    print("This is my file upload")
+    if request.method == 'POST':
+        uploaded_file = request.FILES['file']
+        # Process the uploaded file
+        # ...
+        return HttpResponse('File uploaded successfully')
+    return HttpResponse('Please upload a file')
