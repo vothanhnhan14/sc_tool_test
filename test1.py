@@ -4,7 +4,7 @@ from llama_cpp import Llama
 model = Llama(model_path="path/to/model.gguf")
 
 # User-supplied input (potentially malicious)
-user_input = "{{ ''.__class__.__mro__[1].__subclasses__()[40]('/etc/passwd').read() }}"
+user_input = "This is user input"
 
 # Vulnerable code
 template = model.get_template(user_input)
