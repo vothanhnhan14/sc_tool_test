@@ -1,2 +1,2 @@
 llama-cpp-python==0.2.71
-django==4.1.7
+django==3.2
