@@ -3,5 +3,5 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http.request import MultiPartParser
 
 class MyClass:
-    def handle_multipart_form(self, request):
+    def do_something_else(self, request):
         print("OK")
