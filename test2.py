@@ -4,5 +4,5 @@ from django.http.request import MultiPartParser
 
 class MyClass:
     @csrf_exempt  # To avoid CSRF token issues for demonstration
-    def handle_multipart_form(self, request):
+    def handle_request(self, request):
         print("Ok")
